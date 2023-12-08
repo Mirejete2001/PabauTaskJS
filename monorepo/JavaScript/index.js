@@ -1,6 +1,7 @@
 const inputsContainer = document.querySelector('.input-container')
 const randomValues = ["A", "B", "C", "D"]
 const inputWrapper = document.querySelectorAll('.input')
+const selectedTxt = document.createElement('p');
 let selectedBoxes = []
 
 const Change = () => {
@@ -16,9 +17,14 @@ const Show = () => {
     checkboxes.forEach(box => {
         box.checked ? selectedBoxes.push(box.value) : null;
     });
-    const selectedTxt = document.createElement('p');
-    selectedTxt.textContent = `You've selected inputs with values ${selectedBoxes}`
+    if(selectedBoxes.length !=0){
+        selectedTxt.innerHTML = `You've selected inputs with values <span> ${selectedBoxes} </span>`
+    }
+    else{
+        selectedTxt.innerHTML = `Please select a value`
+    }
     document.body.appendChild(selectedTxt)
+    selectedBoxes = []
 }
 
 const Shuffle = (arr) => {
