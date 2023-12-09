@@ -41,11 +41,7 @@ const Shuffle = (arr) => {
     arr.forEach(element => {
         inputsContainer.appendChild(element)
     });
-    // console.log(arr)
     return arr;
-
-
-    // provoje me e bo me css order
 }
 
 document.querySelector('.shuffle').addEventListener('click', () => Shuffle(inputWrapper))
