@@ -1,0 +1,9 @@
+.section{
+width: 70%;
+    background-color: var(--appWhite);
+    text-align: center;
+    padding: 10px;
+}
+.important{
+    color: var(--appRed);
+}

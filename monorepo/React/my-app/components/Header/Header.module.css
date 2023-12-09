@@ -1,0 +1,16 @@
+.header {
+    width: 100%;
+    background-color: var(--appWhite);
+    text-align: center;
+    padding: 10px;
+    color: var(--appBlack);
+}
+
+.currentStep {
+    color: var(--appRed);
+}
+
+.par {
+    font-size: 18px;
+    margin: 5px;
+}
